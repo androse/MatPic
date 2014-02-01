@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>MatPic</title>
+		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+		<link rel="stylesheet" href="http://bootswatch.com/flatly/bootstrap.min.css">
+		<link rel="stylesheet" href="/stylesheets/style.css">
+	</head>
+	<body>
+		<div class="container views">
+			 <div class="row text-center">
+				<div class="col-sm-6">
+					<video id="viewfinder" autoplay></video>
+					<div class="overlay">
+						<i id="target" class="fa fa-dot-circle-o fa-3x"></i>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<canvas id="canvas"></canvas>
+					<img src="http://placekitten.com/g/320/240" id="preview" alt="preview">
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="text-center">
+				<a id="shutter" class="btn btn-default btn-lg">
+					<i class="fa fa-camera fa-4x"></i> 
+				</a>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="text-center">
+				<div class="btn-group btn-group-lg position-list"></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="text-center">
+				<div id="sources" class="list-group"></div>
+			</div>
+		</div>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/javascripts/cam.js"></script>
+	</body>	
+</html>
